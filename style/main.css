@@ -15,7 +15,7 @@ body{
 
 .navbar {
     width: 100%;
-    position: fixed;
+    position: sticky;
     z-index: 2;
     background: #55ADB7;
     display: flex;
@@ -61,7 +61,7 @@ nav a:not(:last-child)::after {
 
 
 .banner {
-    background: url(../img/sea.png);
+    background: url(../img/sea.png) no-repeat;
 }
 
 .container {
@@ -140,7 +140,7 @@ p {
 .name-comment .foto {
     width: 10em;
     height: 10em;
-    background: url(../img/foto.png);
+    background: url(../img/foto.png) no-repeat;
     border-radius: 50%;
 }
 
@@ -174,7 +174,7 @@ h4 {
 
 
 .map {
-    background: url(../img/map.png);
+    background: url(../img/map.png) no-repeat;
 }
 
 form {
