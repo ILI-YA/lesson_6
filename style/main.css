@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, Tahoma sans-serif;
+}
+
+
+/* =============== Header =============== */
+
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: #55ADB7;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: 'Cherry Swash', cursive;
+}
+
+nav {
+    padding-top: 1.3em;
+    font-size: 1em;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:not(:last-child)::after {
+    content: '/';
+    padding: 1em;
+}
+
+.burger {
+    display: none;
+}
+
+.burger::before {
+    content: '\2630';
+    font-size: 2.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+}
+
+
+/* =============== Header Banner =============== */
+
+
+.banner {
+    background: url(../img/sea.png);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2.8em;
+    padding: 1em 6em;
+}
+
+.banner button {
+    width: 8em;
+    height: 2em;
+    font-size: 1.9em;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background: transparent;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 6em;
+}
+
+ul li {
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}
+
+
+/* =============== div Text =============== */
+
+
+.text {
+    color: #4C505D;
+}
+
+h3 {
+    font-size: 2.2em;
+    padding: 1em 5em;
+}
+
+p {
+    padding: 1em 4.5em;
+    font-size: 1em; 
+}
+
+.image img {
+    margin: 3em 6em;
+}
+
+
+/* =============== div Comment =============== */
+
+
+.comment {
+    background: #4ba76e;
+}
+
+.name-comment {
+    display: flex;
+    justify-content: center; 
+}
+
+.name-comment .foto {
+    width: 10em;
+    height: 10em;
+    background: url(../img/foto.png);
+    border-radius: 50%;
+}
+
+.name {
+    position: relative;
+    font-size: 5px;
+}
+
+h4 {
+    font-size: 5.5em;
+    padding-left: 3rem;
+}
+
+.name span {
+    position: absolute;
+    z-index: 1;
+    top: -3rem;
+    left: 1rem;
+    font-size: 25rem;
+    font-weight: bold;
+    color: #51b475;
+}
+
+.comment p {
+    font-size: 1.3em;
+    padding-top: 5em;
+}
+
+
+/* =============== div Map =============== */
+
+
+.map {
+    background: url(../img/map.png);
+}
+
+form {
+    width: 31em;
+    height: 31em;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    width: 18em;
+    height: 2.5em;
+    padding-left: 1em;
+    margin: 0.5em;
+}
+
+form textarea {
+    width: 18em;
+    height: 6em;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.box-button {
+    width: 4em;
+    height: 4em;
+    margin-top: 0.5em;
+    background: #4ba76e;
+    border-radius: 50%;
+}
+
+form button {
+    display: inline-block;
+    width: 2em;
+    height: 3em;
+    margin: 0.5em 0.2em 0.2em;
+    border: solid #ffffff;
+    border-width: 0 0.9em 0.7em 0;
+    border-radius: 5px;
+    transform: rotate( 45deg);
+    background: #4ba76e;
+    cursor: pointer;
+}
+
+
+/* =============== Footer =============== */
+
+
+footer {
+    padding: 1em;
+    background: #4ba76e;
+    font-size: 0.9em;
+}

@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+@media (max-width: 564px) {
+    * {
+        font-size: calc(1vw + 0.5em);
+    }
+}
