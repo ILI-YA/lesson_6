@@ -17,7 +17,7 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 1;
     background: #55ADB7;
     display: flex;
     justify-content: space-around;
@@ -157,7 +157,6 @@ h4 {
 
 .name span {
     position: absolute;
-    z-index: 1;
     top: -3rem;
     left: 1rem;
     font-size: 25rem;
