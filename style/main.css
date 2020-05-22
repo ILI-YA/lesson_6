@@ -217,7 +217,7 @@ form button {
     margin: 0.5em 0.2em 0.2em;
     border: solid #ffffff;
     border-width: 0 0.9em 0.7em 0;
-    border-radius: 5px;
+    border-radius: 0.4em;
     transform: rotate( 45deg);
     background: #4ba76e;
     cursor: pointer;
