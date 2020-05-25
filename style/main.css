@@ -17,7 +17,7 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background: #55ADB7;
     display: flex;
     justify-content: space-around;
@@ -25,13 +25,13 @@ body{
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: calc(16px + 1vw);
     font-family: 'Cherry Swash', cursive;
 }
 
 nav {
-    padding-top: 1.3em;
-    font-size: 1em;
+    padding-top: 1.1em;
+    font-size: calc(10px + 0.5vw);
 }
 
 nav a {
@@ -50,10 +50,10 @@ nav a:not(:last-child)::after {
 
 .burger::before {
     content: '\2630';
-    font-size: 2.5em;
+    font-size: calc(16px + 1vw);
     cursor: pointer;
     position: absolute;
-    top: 0.5em;
+    top: 0.8em;
     right: 1em;
 }
 
@@ -63,28 +63,28 @@ nav a:not(:last-child)::after {
 
 .banner {
     background: url(../img/sea.png) no-repeat;
+    background-size: cover;
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding: 5em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
 }
 
 h1 {
-    font-size: 2.8em;
-    padding: 1em 6em;
+    font-size: calc(30px + 1vw);
+    padding: 1em 0;
 }
 
 .banner button {
     width: 8em;
     height: 2em;
-    font-size: 1.9em;
+    font-size: calc(10px + 1vw);
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -112,17 +112,19 @@ ul li {
 }
 
 h3 {
-    font-size: 2.2em;
-    padding: 1em 5em;
+    font-size: calc(30px + 0.5vw);
+    padding-top: 1em;
 }
 
-p {
-    padding: 1em 4.5em;
-    font-size: 1em; 
+.text p {
+    padding: 3em 0;
+    font-size: calc(14px + 0.5vw); 
 }
 
-.image img {
-    margin: 3em 6em;
+.image {
+    width: 25em;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -141,31 +143,32 @@ p {
 .name-comment .foto {
     width: 10em;
     height: 10em;
-    background: url(../img/foto.png) no-repeat;
+    background: url(../img/foto.png);
+    background-size: cover;
     border-radius: 50%;
 }
 
 .name {
     position: relative;
-    font-size: 5px;
 }
 
 h4 {
-    font-size: 5.5em;
+    font-size: calc(26px + 1vw);
     padding-left: 3rem;
 }
 
 .name span {
     position: absolute;
-    top: -3rem;
-    left: 1rem;
-    font-size: 25rem;
+    z-index: 1;
+    top: -2.5rem;
+    left: 1.5rem;
+    font-size: calc(21rem + 1vw);
     font-weight: bold;
     color: #51b475;
 }
 
 .comment p {
-    font-size: 1.3em;
+    font-size: calc(17px + 0.1vw);
     padding-top: 5em;
 }
 
@@ -175,6 +178,7 @@ h4 {
 
 .map {
     background: url(../img/map.png) no-repeat;
+    background-size: cover;
 }
 
 form {
@@ -228,7 +232,10 @@ form button {
 
 
 footer {
-    padding: 1em;
     background: #4ba76e;
-    font-size: 0.9em;
+}
+
+footer p {
+    padding: 1em 0;
+    font-size: calc(13px + 0.1vw);
 }
